@@ -3,7 +3,7 @@ alert('Merhaba, burcunuzu öğrenmek için ilerleyin.');
 let kullaniciAy = prompt('Hangi ayda doğdunuz? ("ocak-şubat-mart" şeklinde)');
 let kullaniciGun = Number(prompt('Hangi gün doğdunuz?("1-06-17-23" şeklinde)'));
 
-if (kullaniciAy.toLowerCase() === "ocak" || kullaniciAy.toLowerCase() === "1") {
+if (kullaniciAy.toLowerCase() === "ocak") {
 
     if (kullaniciGun < 20 && kullaniciGun > 0) {
         alert('Merhaba, Oğlak\'sın.');
