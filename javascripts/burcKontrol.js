@@ -21,7 +21,6 @@ else if (kullaniciAy.toLowerCase() === "şubat") {
     if (kullaniciGun < 19 && kullaniciGun > 0) {
         alert('Merhaba, Kova\'sın.');
         console.log('Merhaba, Kova\'sın.');
-
     }
     else if (kullaniciGun < 30 && kullaniciGun > 18) {
         alert('Merhaba, Balık\'sın.');
