@@ -10,20 +10,25 @@ else {
     let kullaniciGirisAdi = prompt('Kullanıcı adınız:');
     let parolaGiris = prompt(`Parola:`);
 
-    if (parola !== parolaGiris) {
+    if (kullaniciAdi !== kullaniciGirisAdi || parola !== parolaGiris) {
         alert('Kullanıcı adı veya parola doğru değil.');
-    }
-    let eveyah = prompt('Tekrar denemek ister misin? (E/H)');
-    if (eveyah.toLowerCase() === "E") {
-        kullaniciGirisAdi = prompt('Kullanıcı adınız:');
-        parolaGiris = prompt('Parola:')
-        if (kullaniciAdi === kullaniciGirisAdi) {
-            if (parola === parolaGiris) {
+        let eveyah = prompt('Tekrar denemek ister misin? (E/H)');
+        if (eveyah.toLowerCase() === "e") {
+            kullaniciGirisAdi = prompt('Kullanıcı adınız:');
+            parolaGiris = prompt('Parola:')
+            if (kullaniciAdi === kullaniciGirisAdi && parola === parolaGiris) {
                 alert('tebrikler giriş yapıldı!');
             }
+            else if (kullaniciAdi !== kullaniciGirisAdi || parola !== parolaGiris) {
+                alert('Kullanıcı adı veya parola doğru değil.');
+                alert("Sistemden çıkılıyor.")
+            }
+        }
+        else if (eveyah.toLowerCase() === "h") {
+            alert("Sistemden çıkılıyor.")
         }
     }
-    else if (eveyah.toLowerCase() === "H") {
-        alert("Sistemden çıkılıyor.")
+    else {
+        alert('tebrikler giriş yapıldı!'); 
     }
 }
